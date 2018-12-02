@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Hrvoje Vujnović</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navigation">
+        <div id="navigation-intro-link">
+            <a href="#intro" class="navigation-link">Introduction</a>
+        </div>
+        <div id="navigation-projects-links">
+            <a href="#javascript-projects" class="navigation-link">JavaScript</a>
+            <a href="#react-js-projects" class="navigation-link">React</a>
+            <a href="#node-js-projects" class="navigation-link">Node</a>
+        </div>
+        <div id="navigation-links-link">
+            <a href="#links" class="navigation-link">Contact</a>
+        </div>
+    </nav>
+    <div id="intro">
+        <h1 id="title">Hello, my name is Hrvoje Vujnović.</h1>
+        <h3 id="subtitle">I am a full stack web developer and I would like to show you some of the projects I have built.</h3>
+    </div>
+    <div id="all-projects">
+        <div id="javascript-projects" class="projects-by-tech">
+            <h2>JavaScript</h2>
+            <hr>
+            <div id="choropleth-map" class="project">
+                <div class="project-links">
+                    <div class="project-img-container">
+                        <a href="https://hv-choropleth-map.netlify.com/" target="_blank" class="project-link-img"><img src="./images/map.svg" alt="choropleth map" class="project-img"></a>
+                    </div>
+                    <div class="source-code-container">
+                        <a href="https://github.com/Drassonax/Portfolio-Project--Choropleth-Map" target="_blank" class="source-code"><div>View source code</div></a>
+                    </div>
+                </div>
+                    <div class="project-info-container">
+                        <div class="project-info">
+                            <div class="title">
+                                <div class="project-title"><a href="https://hv-choropleth-map.netlify.com/" target="_blank">Choropleth Map</a></div>
+                                <div class="project-tech"><i class="fab fa-js-square"></i></div>
+                            </div>
+                            <div class="project-description-container">
+                                <div class="project-description" id="map-desc">
+                                    Choropleth Map App fetches JSON data from a remote source describing all US county borders and relevant education statistics for each county. This data is then used to create a map of the USA, complete with state and county borders. Each county's color is assigned according to the percentage of the population with a bachelor's degree (or higher). The user is able to mouseover each county to get a more detailed overview of that county's education statistics. This is accomplished using the <strong>D3</strong> JavaScript library.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="roman-numeral-converter" class="project">
+                <div class="project-links">
+                    <div class="project-img-container">
+                        <a href="https://hv-roman-numeral-converter.netlify.com/" target="_blank" class="project-link-img"><img src="./images/roman-numeral.svg" alt="roman numeral converter" class="project-img"></a>
+                    </div>
+                    <div class="source-code-container">
+                        <a href="https://github.com/Drassonax/Portfolio-Project--Roman-Numeral-Converter" target="_blank" class="source-code"><div>View source code</div></a>
+                    </div>
+                </div>
+                <div class="project-info-container">
+                    <div class="project-info">
+                        <div class="title">
+                            <div class="project-title"><a href="https://hv-roman-numeral-converter.netlify.com/" target="_blank">Roman Numeral Converter</a></div>
+                            <div class="project-tech"><i class="fab fa-js-square"></i></div>
+                        </div>
+                        <div class="project-description">
+                            Roman Numeral Converter App allows the user to enter an Arabic numeral and the app will convert it to a Roman numeral and display the result. The user is not able to enter non-numeric characters into the input field and the number cannot begin with a zero. The app will only work with numbers between 1 (inclusive) and 4000 (exclusive).
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="hangman" class="project">
+                <div class="project-links">
+                    <div class="project-img-container">
+                        <a href="https://hv-hangman.netlify.com/" target="_blank" class="project-link-img"><img src="./images/hangman.svg" alt="hangman" class="project-img"></a>
+                    </div>
+                    <div class="source-code-container">
+                        <a href="https://github.com/Drassonax/Portfolio-Project--Hangman" target="_blank" class="source-code"><div>View source code</div></a>
+                    </div>
+                </div>
+                <div class="project-info-container">
+                    <div class="project-info">
+                        <div class="title">
+                            <div class="project-title"><a href="https://hv-hangman.netlify.com/" target="_blank">Hangman</a></div>
+                            <div class="project-tech"><i class="fab fa-js-square"></i></div>
+                        </div>
+                        <div class="project-description">
+                            Hangman App allows the user to play a game of Hangman. The app will fetch an expression from a remote source and show the user the number of words in the expression and the number of letters in each word. On each keypress the user makes, the app will evaluate whether the expression includes that character or not. If it does, that character will appear in all the correct places in the expression. Otherwise, the app will notify the user accordingly and reduce the number of remaining guesses left. If the user is left without any remaining guesses, a message notifying the user that he or she has lost the game along with the final answer will appear on the screen. In case the user guesses all the letters, a congratulatory message will appear notifying the user that he or she has won the game. At any time, the user can press the reset button which will fetch a new expression and the game will begin anew.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="react-js-projects" class="projects-by-tech">
+            <h2>React JS</h2>
+            <hr>
+            <div id="random-quote-machine" class="project">
+                <div class="project-links">
+                    <div class="project-img-container">
+                        <a href="https://hv-random-quote-machine.herokuapp.com/" target="_blank" class="project-link-img"><img src="./images/quote.svg" alt="random quote machine" class="project-img"></a>
+                    </div>
+                    <div class="source-code-container">
+                        <a href="https://github.com/Drassonax/Portfolio-Project--Random-Quote-Machine" target="_blank" class="source-code"><div>View source code</div></a>
+                    </div>
+                </div>
+                <div class="project-info-container">
+                    <div class="project-info">
+                        <div class="title">
+                            <div class="project-title"><a href="https://hv-random-quote-machine.herokuapp.com/" target="_blank">Random Quote Machine</a></div>
+                            <div class="project-tech"><i class="fab fa-react"></i></div>
+                        </div>
+                        <div class="project-description">
+                            Random Quote Machine fetches a random quote from a remote source and displays the quote and its author. The user can press the 'new quote' button to fetch and display a new quote. This will also change the color of the background and all the elements on the page. The user can also press the Twitter button to immediately tweet the quote and its author from his or her account. <strong>Particles JS</strong> library is used to create the background of the page.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="drum-machine" class="project">
+                <div class="project-links">
+                    <div class="project-img-container">
+                        <a href="https://hv-drum-machine.herokuapp.com/" target="_blank" class="project-link-img"><img src="./images/drums.svg" alt="drum machine" class="project-img"></a>
+                    </div>
+                    <div class="source-code-container">
+                        <a href="https://github.com/Drassonax/Portfolio-Project--Drum-Machine" target="_blank" class="source-code"><div>View source code</div></a>
+                    </div>
+                </div>
+                <div class="project-info-container">
+                    <div class="project-info">
+                        <div class="title">
+                            <div class="project-title"><a href="https://hv-drum-machine.herokuapp.com/" target="_blank">Drum Machine</a></div>
+                            <div class="project-tech"><i class="fab fa-react"></i></div>
+                        </div>
+                        <div class="project-description">
+                            Drum Machine App displays a virtual drum kit to the user. The user can click on any drumpad or press the matching key on the keyboard to play the corresponding sound. A small display window will show the name of the sound currently playing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="calculator" class="project">
+                <div class="project-links">
+                    <div class="project-img-container">
+                        <a href="https://hv-calculator.herokuapp.com/" target="_blank" class="project-link-img"><img src="./images/calculator.svg" alt="calculator" class="project-img"></a>
+                    </div>
+                    <div class="source-code-container">
+                        <a href="https://github.com/Drassonax/Portfolio-Project--Calculator" target="_blank" class="source-code"><div>View source code</div></a>
+                    </div>
+                </div>
+                <div class="project-info-container">
+                <div class="project-info">
+                        <div class="title">
+                            <div class="project-title"><a href="https://hv-calculator.herokuapp.com/" target="_blank">Calculator</a></div>
+                            <div class="project-tech"><i class="fab fa-react"></i></div>
+                        </div>
+                        <div class="project-description">
+                            With the Calculator App, the user can compose mathematical expressions and get the final result back. The app supports addition, subtraction, multiplication and division. The user can enter data into the calculator either by clicking on the buttons or by pressing the corresponding key on the keyboard (number keys for numbers, operator keys for operators, '.' for a decimal point, 'Enter' for 'equals' and 'Escape' for 'clear'). If a complex expression is entered, the app will take the order of operations into account and perform mulitplication and division before addition and subtraction. When the user enters the equal sign, the entire expression is displayed along with the result. The user can then create a new expression by entering a number or continue calculating from the latest result by entering any operator sign. It is also possible to change the last operator by entering a new operator before entering a new number.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="face-reader" class="project">
+                <div class="project-links">
+                    <div class="project-img-container">
+                        <a href="https://hv-face-reader.herokuapp.com/" target="_blank" class="project-link-img"><img src="./images/face-reader.svg" alt="face-reader" class="project-img"></a>
+                    </div>
+                    <div class="source-code-container">
+                        <a href="https://github.com/Drassonax/Portfolio-Project--Face-Reader" target="_blank" class="source-code"><div>View source code</div></a>
+                    </div>
+                </div>
+                <div class="project-info-container">
+                    <div class="project-info">
+                        <div class="title">
+                            <div class="project-title"><a href="https://hv-face-reader.herokuapp.com/" target="_blank">Face Reader</a></div>
+                            <div class="project-tech"><i class="fab fa-react"></i></div>
+                        </div>
+                        <div class="project-description">
+                            Face Reader App allows the user to submit a URL to any image publicly visible on the internet and it will detect and mark all faces present in that image and display demographic data about each person detected. The data presented to the user includes assessment of the person's age, gender and race. The user can click on each face in the image to get data about that specific person. This app uses <strong>Clarifai API</strong> to analyze images and get the relevant data.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="expensify" class="project">
+                <div class="project-links">
+                    <div class="project-img-container">
+                        <a href="https://hv-expensify.herokuapp.com/" target="_blank" class="project-link-img"><img src="./images/expensify.svg" alt="expensify" class="project-img"></a>
+                    </div>
+                    <div class="source-code-container">
+                        <a href="https://github.com/Drassonax/Portfolio-Project--Expensify" target="_blank" class="source-code"><div>View source code</div></a>
+                    </div>
+                </div>
+                <div class="project-info-container">
+                    <div class="project-info">
+                        <div class="title">
+                            <div class="project-title"><a href="https://hv-expensify.herokuapp.com/" target="_blank">Expensify</a></div>
+                            <div class="project-tech"><i class="fab fa-react"></i></div>
+                        </div>
+                        <div class="project-description">
+                            Expensify App allows users to keep track of their expenses. The users can log into the app with their Google account to get an overview of all their expenses, add new expenses, or edit and delete existing ones. Expenses can be sorted by amount or by date. It is also possible to filter expenses by title or by date; the user will always be presented with information about the number of expenses currently shown on the screen as well as the number of expenses that have been filtered out. This app uses <strong>Firebase</strong> to handle its database and authentication; routing is handled via <strong>React Router</strong> and state management is handled via <strong>Redux</strong>. Testing was done using <strong>Jest</strong> and <strong>Enzyme</strong>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="node-js-projects" class="projects-by-tech">
+            <h2>Node JS</h2>
+            <hr>
+            <div id="chat-app" class="project">
+                <div class="project-links">
+                    <div class="project-img-container">
+                        <a href="https://hv-chat-app.herokuapp.com/" target="_blank" class="project-link-img"><img src="./images/chat.svg" alt="chat app" class="project-img"></a>
+                    </div>
+                    <div class="source-code-container">
+                        <a href="https://github.com/Drassonax/Portfolio-Project--Chat-App" target="_blank" class="source-code"><div>View source code</div></a>
+                    </div>
+                </div>
+                <div class="project-info-container">
+                    <div class="project-info">
+                        <div class="title">
+                            <div class="project-title"><a href="https://hv-chat-app.herokuapp.com/" target="_blank">Chat App</a></div>
+                            <div class="project-tech"><i class="fab fa-node-js"></i></div>
+                        </div>
+                        <div class="project-description">
+                            Chat App allows the user to chat with other people. Before joining a room, the user must choose a username unique to the room he or she wishes to join. A list of all rooms is shown to the user; any user can join any existing room or create a new room. When a new user joins a room, a welcome message from the Admin will be displayed to the new user and a message notifying that a new user has joined will be shown to all other users in that room. A list of all users in the room is displayed on the room screen. Users can enter a message into the input field and click on the 'Send' button or press the Enter key to send the message to all other users in the room. Users can also press the 'My current location' button to send a link that leads to their actual location shown on Google Maps. When a user leaves the room page, a message from Admin will notify all other users in the room about the user which has left, and that user's name will be removed from the list of users in the room. If all users leave a room, that room will be removed from the list of rooms a new user can join. This app was built using <strong>socket.io</strong> and tested using <strong>Mocha</strong>.
+                            <br>
+                            To test the app, enter the same room from multiple tabs and send messages between them.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="message-board" class="project">
+                <div class="project-links">
+                    <div class="project-img-container">
+                        <a href="https://hv-message-board.herokuapp.com/" target="_blank" class="project-link-img"><img src="./images/message-board.svg" alt="message board" class="project-img"></a>
+                    </div>
+                    <div class="source-code-container">
+                        <a href="https://github.com/Drassonax/Portfolio-Project--Message-Board" target="_blank" class="source-code"><div>View source code</div></a>
+                    </div>
+                </div>
+                <div class="project-info-container">
+                    <div class="project-info">
+                        <div class="title">
+                            <div class="project-title"><a href="https://hv-message-board.herokuapp.com/" target="_blank">Anonymous Message Board</a></div>
+                            <div class="project-tech"><i class="fab fa-react"></i><i class="fab fa-node-js"></i></div>
+                        </div>
+                        <div class="project-description">
+                            This Anonymous Message Board allows users to participate in discussions with other people about any topic they desire. Any user can create a new board within the app, a new thread within any board and post replies to any thread. Users can report a thread or a single reply if they deem its content inappropriate, in which case the post will be flagged as reported. Any thread or post created by the user can be deleted by entering the correct password. Deleted threads will be entirely removed, but deleted replies will just have their content replaced by the word 'DELETED'. Users can submit posts by any username they desire on a post-by-post basis, it is not required (or even possible) to log in to participate in a discussion. This app uses <strong>MongoDB</strong> (via MLab) and <strong>Mongoose</strong> to handle the database. A combination of <strong>Node JS</strong> and <strong>React Router</strong> is used for routing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="links">
+        <h3>You can find out more about me on the following links:</h3>
+        <div id="links-icons">
+            <a href="https://github.com/Drassonax" class="profiles-link"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/hrvoje-vujnovi%C4%87/" class="profiles-link"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.freecodecamp.org/konan" class="profiles-link"><i class="fab fa-free-code-camp fa-2x"></i></a>
+        </div>
+    </div>
+</body>
+</html>

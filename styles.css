@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  color: #eeeff7;
+}
+
+a:hover {
+  color: #9e7f7f;
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: #1c1d21;
+  height: 2.5em;
+  z-index: 9;
+}
+
+#navigation-projects-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-link {
+  padding: 0 8px;
+  font-size: 18px;
+}
+
+#intro {
+  padding: 10% 0;
+  text-align: center;
+  background-color: #31353d;
+  color: #eeeff7;
+}
+
+#all-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeeff7;
+}
+
+.projects-by-tech {
+  width: 60%;
+  padding-top: 2%;
+}
+
+@media (max-width: 650px) {
+  .projects-by-tech {
+    width: 100%;
+  } 
+}
+
+h2 {
+  font-size: 28px;
+}
+
+hr {
+  margin-bottom: 5%;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.project-links {
+  background-color: #31353d;
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+  width: 20%;
+}
+
+.project-img-container {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+
+.project-link-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #1c1d21;
+}
+
+.project-link-img:hover {
+  border-color: #9e7f7f;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.source-code-container {
+  width: 100%;
+  padding-top: 20%;
+  position: relative;
+}
+.source-code {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #962d3e;
+  font-size: 14px;
+}
+
+.project-info-container {
+  width: 62.5%;
+  padding-top: 15%;
+  position: relative;
+}
+
+.project-info {
+  background-color: #d8dada;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: auto;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 5%;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #31353d;
+}
+
+.project-title {
+  padding: 0.2em 0;
+}
+
+.project-tech {
+  color: #d8dada;
+}
+
+.project-description {
+  padding: 2% 5% 5% 5%;
+  text-align: justify;
+  font-size: 14px;
+}
+
+#links {
+  background-color: #962d3e;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 10% 0;
+}
+
+h3 {
+  color: white;
+}
+
+#links-icons {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
